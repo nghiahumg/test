@@ -1,0 +1,1280 @@
+---------------------------------------------------------------
+
+[2022-07-01T22:46:33+08:00] 103.142.140.69 GET hi.easycars.vip/admin/index/clearruntime.html?spm=m-1&open_type=modal
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000676s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004326s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000638s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:46:35+08:00] 103.142.140.69 GET hi.easycars.vip/admin/index/main.html?spm=m-1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000507s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.003028s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_invest` [ RunTime:0.002044s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_user` [ RunTime:0.002446s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001968s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( status = 1 ) [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001939s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( status = 1 ) [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1656604800 AND 1659283199 AND status = 1 ) [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1656604800 AND 1659283199 AND status = 1 ) [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_invest_list` [ RunTime:0.001998s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1656604800 AND 1659283199 AND status = 1 ) [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1656604800 AND 1659283199 ) [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1656604800 AND 1659283199 ) [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1654012800 AND 1656604799 AND status = 1 ) [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1654012800 AND 1656604799 AND status = 1 ) [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1654012800 AND 1656604799 AND status = 1 ) [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1654012800 AND 1656604799 ) [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1654012800 AND 1656604799 ) [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1656604800 AND 1656691199 AND status = 1 ) [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1656604800 AND 1656691199 AND status = 1 ) [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1656604800 AND 1656691199 AND status = 1 ) [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1656604800 AND 1656691199 ) [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1656604800 AND 1656691199 ) [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1656604800 AND 1656691199 ) [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT SUM(`money2`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1656604800 AND 1656691199 ) [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SELECT SUM(`money1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1656604800 AND 1656691199 ) [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1656691200 AND 1656777599 AND status = 1 ) [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1656691200 AND 1656777599 AND status = 1 ) [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1656691200 AND 1656777599 AND status = 1 ) [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1656691200 AND 1656777599 ) [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1656691200 AND 1656777599 ) [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1656691200 AND 1656777599 ) [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT SUM(`money2`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1656691200 AND 1656777599 ) [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT SUM(`money1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1656691200 AND 1656777599 ) [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1656777600 AND 1656863999 AND status = 1 ) [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1656777600 AND 1656863999 AND status = 1 ) [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1656777600 AND 1656863999 AND status = 1 ) [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1656777600 AND 1656863999 ) [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1656777600 AND 1656863999 ) [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1656777600 AND 1656863999 ) [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SELECT SUM(`money2`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1656777600 AND 1656863999 ) [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT SUM(`money1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1656777600 AND 1656863999 ) [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1656864000 AND 1656950399 AND status = 1 ) [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1656864000 AND 1656950399 AND status = 1 ) [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1656864000 AND 1656950399 AND status = 1 ) [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1656864000 AND 1656950399 ) [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1656864000 AND 1656950399 ) [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1656864000 AND 1656950399 ) [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT SUM(`money2`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1656864000 AND 1656950399 ) [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT SUM(`money1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1656864000 AND 1656950399 ) [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1656950400 AND 1657036799 AND status = 1 ) [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1656950400 AND 1657036799 AND status = 1 ) [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1656950400 AND 1657036799 AND status = 1 ) [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1656950400 AND 1657036799 ) [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1656950400 AND 1657036799 ) [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1656950400 AND 1657036799 ) [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SELECT SUM(`money2`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1656950400 AND 1657036799 ) [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SELECT SUM(`money1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1656950400 AND 1657036799 ) [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657036800 AND 1657123199 AND status = 1 ) [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657036800 AND 1657123199 AND status = 1 ) [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1657036800 AND 1657123199 AND status = 1 ) [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657036800 AND 1657123199 ) [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657036800 AND 1657123199 ) [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657036800 AND 1657123199 ) [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT SUM(`money2`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1657036800 AND 1657123199 ) [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT SUM(`money1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1657036800 AND 1657123199 ) [ RunTime:0.000250s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657123200 AND 1657209599 AND status = 1 ) [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657123200 AND 1657209599 AND status = 1 ) [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1657123200 AND 1657209599 AND status = 1 ) [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657123200 AND 1657209599 ) [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657123200 AND 1657209599 ) [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657123200 AND 1657209599 ) [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SELECT SUM(`money2`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1657123200 AND 1657209599 ) [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SELECT SUM(`money1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1657123200 AND 1657209599 ) [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657209600 AND 1657295999 AND status = 1 ) [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657209600 AND 1657295999 AND status = 1 ) [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1657209600 AND 1657295999 AND status = 1 ) [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657209600 AND 1657295999 ) [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657209600 AND 1657295999 ) [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657209600 AND 1657295999 ) [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SELECT SUM(`money2`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1657209600 AND 1657295999 ) [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT SUM(`money1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1657209600 AND 1657295999 ) [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657296000 AND 1657382399 AND status = 1 ) [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657296000 AND 1657382399 AND status = 1 ) [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1657296000 AND 1657382399 AND status = 1 ) [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657296000 AND 1657382399 ) [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657296000 AND 1657382399 ) [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657296000 AND 1657382399 ) [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT SUM(`money2`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1657296000 AND 1657382399 ) [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT SUM(`money1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1657296000 AND 1657382399 ) [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657382400 AND 1657468799 AND status = 1 ) [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657382400 AND 1657468799 AND status = 1 ) [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1657382400 AND 1657468799 AND status = 1 ) [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657382400 AND 1657468799 ) [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657382400 AND 1657468799 ) [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657382400 AND 1657468799 ) [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT SUM(`money2`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1657382400 AND 1657468799 ) [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SELECT SUM(`money1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1657382400 AND 1657468799 ) [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657468800 AND 1657555199 AND status = 1 ) [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657468800 AND 1657555199 AND status = 1 ) [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1657468800 AND 1657555199 AND status = 1 ) [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657468800 AND 1657555199 ) [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657468800 AND 1657555199 ) [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657468800 AND 1657555199 ) [ RunTime:0.000250s ]
+[ sql ] [ SQL ] SELECT SUM(`money2`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1657468800 AND 1657555199 ) [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SELECT SUM(`money1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1657468800 AND 1657555199 ) [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657555200 AND 1657641599 AND status = 1 ) [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657555200 AND 1657641599 AND status = 1 ) [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1657555200 AND 1657641599 AND status = 1 ) [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657555200 AND 1657641599 ) [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657555200 AND 1657641599 ) [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657555200 AND 1657641599 ) [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT SUM(`money2`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1657555200 AND 1657641599 ) [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT SUM(`money1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1657555200 AND 1657641599 ) [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657641600 AND 1657727999 AND status = 1 ) [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657641600 AND 1657727999 AND status = 1 ) [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1657641600 AND 1657727999 AND status = 1 ) [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657641600 AND 1657727999 ) [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657641600 AND 1657727999 ) [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657641600 AND 1657727999 ) [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SELECT SUM(`money2`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1657641600 AND 1657727999 ) [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SELECT SUM(`money1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1657641600 AND 1657727999 ) [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657728000 AND 1657814399 AND status = 1 ) [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657728000 AND 1657814399 AND status = 1 ) [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1657728000 AND 1657814399 AND status = 1 ) [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657728000 AND 1657814399 ) [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657728000 AND 1657814399 ) [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657728000 AND 1657814399 ) [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT SUM(`money2`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1657728000 AND 1657814399 ) [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SELECT SUM(`money1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1657728000 AND 1657814399 ) [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657814400 AND 1657900799 AND status = 1 ) [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657814400 AND 1657900799 AND status = 1 ) [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1657814400 AND 1657900799 AND status = 1 ) [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657814400 AND 1657900799 ) [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657814400 AND 1657900799 ) [ RunTime:0.000226s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657814400 AND 1657900799 ) [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SELECT SUM(`money2`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1657814400 AND 1657900799 ) [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SELECT SUM(`money1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1657814400 AND 1657900799 ) [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657900800 AND 1657987199 AND status = 1 ) [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657900800 AND 1657987199 AND status = 1 ) [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1657900800 AND 1657987199 AND status = 1 ) [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657900800 AND 1657987199 ) [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657900800 AND 1657987199 ) [ RunTime:0.000222s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657900800 AND 1657987199 ) [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SELECT SUM(`money2`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1657900800 AND 1657987199 ) [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SELECT SUM(`money1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1657900800 AND 1657987199 ) [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657987200 AND 1658073599 AND status = 1 ) [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657987200 AND 1658073599 AND status = 1 ) [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1657987200 AND 1658073599 AND status = 1 ) [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657987200 AND 1658073599 ) [ RunTime:0.000250s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657987200 AND 1658073599 ) [ RunTime:0.000220s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1657987200 AND 1658073599 ) [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SELECT SUM(`money2`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1657987200 AND 1658073599 ) [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SELECT SUM(`money1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1657987200 AND 1658073599 ) [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658073600 AND 1658159999 AND status = 1 ) [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658073600 AND 1658159999 AND status = 1 ) [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1658073600 AND 1658159999 AND status = 1 ) [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658073600 AND 1658159999 ) [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658073600 AND 1658159999 ) [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658073600 AND 1658159999 ) [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SELECT SUM(`money2`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1658073600 AND 1658159999 ) [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SELECT SUM(`money1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1658073600 AND 1658159999 ) [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658160000 AND 1658246399 AND status = 1 ) [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658160000 AND 1658246399 AND status = 1 ) [ RunTime:0.000228s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1658160000 AND 1658246399 AND status = 1 ) [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658160000 AND 1658246399 ) [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658160000 AND 1658246399 ) [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658160000 AND 1658246399 ) [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT SUM(`money2`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1658160000 AND 1658246399 ) [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SELECT SUM(`money1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1658160000 AND 1658246399 ) [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658246400 AND 1658332799 AND status = 1 ) [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658246400 AND 1658332799 AND status = 1 ) [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1658246400 AND 1658332799 AND status = 1 ) [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658246400 AND 1658332799 ) [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658246400 AND 1658332799 ) [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658246400 AND 1658332799 ) [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SELECT SUM(`money2`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1658246400 AND 1658332799 ) [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SELECT SUM(`money1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1658246400 AND 1658332799 ) [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658332800 AND 1658419199 AND status = 1 ) [ RunTime:0.000221s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658332800 AND 1658419199 AND status = 1 ) [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1658332800 AND 1658419199 AND status = 1 ) [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658332800 AND 1658419199 ) [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658332800 AND 1658419199 ) [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658332800 AND 1658419199 ) [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT SUM(`money2`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1658332800 AND 1658419199 ) [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SELECT SUM(`money1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1658332800 AND 1658419199 ) [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658419200 AND 1658505599 AND status = 1 ) [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658419200 AND 1658505599 AND status = 1 ) [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1658419200 AND 1658505599 AND status = 1 ) [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658419200 AND 1658505599 ) [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658419200 AND 1658505599 ) [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658419200 AND 1658505599 ) [ RunTime:0.000222s ]
+[ sql ] [ SQL ] SELECT SUM(`money2`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1658419200 AND 1658505599 ) [ RunTime:0.000206s ]
+[ sql ] [ SQL ] SELECT SUM(`money1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1658419200 AND 1658505599 ) [ RunTime:0.000199s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658505600 AND 1658591999 AND status = 1 ) [ RunTime:0.000200s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658505600 AND 1658591999 AND status = 1 ) [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1658505600 AND 1658591999 AND status = 1 ) [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658505600 AND 1658591999 ) [ RunTime:0.000226s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658505600 AND 1658591999 ) [ RunTime:0.000228s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658505600 AND 1658591999 ) [ RunTime:0.000222s ]
+[ sql ] [ SQL ] SELECT SUM(`money2`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1658505600 AND 1658591999 ) [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SELECT SUM(`money1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1658505600 AND 1658591999 ) [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658592000 AND 1658678399 AND status = 1 ) [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658592000 AND 1658678399 AND status = 1 ) [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1658592000 AND 1658678399 AND status = 1 ) [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658592000 AND 1658678399 ) [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658592000 AND 1658678399 ) [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658592000 AND 1658678399 ) [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SELECT SUM(`money2`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1658592000 AND 1658678399 ) [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SELECT SUM(`money1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1658592000 AND 1658678399 ) [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658678400 AND 1658764799 AND status = 1 ) [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658678400 AND 1658764799 AND status = 1 ) [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1658678400 AND 1658764799 AND status = 1 ) [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658678400 AND 1658764799 ) [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658678400 AND 1658764799 ) [ RunTime:0.000203s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658678400 AND 1658764799 ) [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SELECT SUM(`money2`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1658678400 AND 1658764799 ) [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SELECT SUM(`money1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1658678400 AND 1658764799 ) [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658764800 AND 1658851199 AND status = 1 ) [ RunTime:0.000220s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658764800 AND 1658851199 AND status = 1 ) [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1658764800 AND 1658851199 AND status = 1 ) [ RunTime:0.000216s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658764800 AND 1658851199 ) [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658764800 AND 1658851199 ) [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658764800 AND 1658851199 ) [ RunTime:0.000206s ]
+[ sql ] [ SQL ] SELECT SUM(`money2`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1658764800 AND 1658851199 ) [ RunTime:0.000203s ]
+[ sql ] [ SQL ] SELECT SUM(`money1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1658764800 AND 1658851199 ) [ RunTime:0.000203s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658851200 AND 1658937599 AND status = 1 ) [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658851200 AND 1658937599 AND status = 1 ) [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1658851200 AND 1658937599 AND status = 1 ) [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658851200 AND 1658937599 ) [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658851200 AND 1658937599 ) [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658851200 AND 1658937599 ) [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT SUM(`money2`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1658851200 AND 1658937599 ) [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT SUM(`money1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1658851200 AND 1658937599 ) [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658937600 AND 1659023999 AND status = 1 ) [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658937600 AND 1659023999 AND status = 1 ) [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1658937600 AND 1659023999 AND status = 1 ) [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658937600 AND 1659023999 ) [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658937600 AND 1659023999 ) [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1658937600 AND 1659023999 ) [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT SUM(`money2`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1658937600 AND 1659023999 ) [ RunTime:0.000200s ]
+[ sql ] [ SQL ] SELECT SUM(`money1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1658937600 AND 1659023999 ) [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1659024000 AND 1659110399 AND status = 1 ) [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1659024000 AND 1659110399 AND status = 1 ) [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1659024000 AND 1659110399 AND status = 1 ) [ RunTime:0.000221s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1659024000 AND 1659110399 ) [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1659024000 AND 1659110399 ) [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1659024000 AND 1659110399 ) [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SELECT SUM(`money2`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1659024000 AND 1659110399 ) [ RunTime:0.000192s ]
+[ sql ] [ SQL ] SELECT SUM(`money1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1659024000 AND 1659110399 ) [ RunTime:0.000202s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1659110400 AND 1659196799 AND status = 1 ) [ RunTime:0.000195s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1659110400 AND 1659196799 AND status = 1 ) [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1659110400 AND 1659196799 AND status = 1 ) [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1659110400 AND 1659196799 ) [ RunTime:0.000221s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1659110400 AND 1659196799 ) [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1659110400 AND 1659196799 ) [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SELECT SUM(`money2`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1659110400 AND 1659196799 ) [ RunTime:0.000202s ]
+[ sql ] [ SQL ] SELECT SUM(`money1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1659110400 AND 1659196799 ) [ RunTime:0.000195s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1659196800 AND 1659283199 AND status = 1 ) [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1659196800 AND 1659283199 AND status = 1 ) [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time2) BETWEEN 1659196800 AND 1659283199 AND status = 1 ) [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_user` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1659196800 AND 1659283199 ) [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1659196800 AND 1659283199 ) [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` WHERE  ( UNIX_TIMESTAMP(time) BETWEEN 1659196800 AND 1659283199 ) [ RunTime:0.000195s ]
+[ sql ] [ SQL ] SELECT SUM(`money2`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1659196800 AND 1659283199 ) [ RunTime:0.000189s ]
+[ sql ] [ SQL ] SELECT SUM(`money1`) AS tp_sum FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) BETWEEN 1659196800 AND 1659283199 ) [ RunTime:0.000190s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_recharge` WHERE  ( status = 1 ) [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_cash` WHERE  ( status = 1 ) [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SELECT SUM(`pay1`) AS tp_sum FROM `lc_invest_list` WHERE  ( status = 1 ) [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_invest` [ RunTime:0.000166s ]
+[ sql ] [ SQL ] SELECT SUM(`money`) AS tp_sum FROM `lc_invest` [ RunTime:0.000209s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:46:36+08:00] 103.142.140.69 GET hi.easycars.vip/admin/index/info/10000.html?spm=m-1&open_type=modal
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000569s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.002882s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.001873s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000614s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:46:45+08:00] 138.68.149.125 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000669s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004306s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000667s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002881s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000879s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002800s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002561s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000455s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:46:48+08:00] 103.142.140.69 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000633s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.003550s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002407s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002300s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002168s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000372s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:47:01+08:00] 38.54.36.20 GET hi.easycars.vip/index/index/item_crontab
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000405s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.002503s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_invest_list` [ RunTime:0.001519s ]
+[ sql ] [ SQL ] SELECT * FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) <= 1656686821 AND status = '0' ) [ RunTime:0.000505s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:47:03+08:00] 103.142.140.69 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000470s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.003020s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002048s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000650s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001929s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001680s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000311s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:47:10+08:00] 31.218.152.192 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000660s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004236s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000661s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002925s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000916s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002720s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002524s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000496s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:47:18+08:00] 103.142.140.69 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000455s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.002865s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.001923s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001842s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000771s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002733s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000474s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:47:27+08:00] 154.39.81.45 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000645s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004513s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002652s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000914s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002670s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002594s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000532s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:47:33+08:00] 103.142.140.69 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000690s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004176s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002737s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000987s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002685s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002527s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000459s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:47:45+08:00] 138.68.149.125 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000680s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004171s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002856s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000894s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002676s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002506s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000477s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:47:48+08:00] 103.142.140.69 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000765s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004275s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000911s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.003108s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000903s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002978s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002558s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000451s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:48:01+08:00] 38.54.36.20 GET hi.easycars.vip/index/index/item_crontab
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000380s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.002549s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_invest_list` [ RunTime:0.001472s ]
+[ sql ] [ SQL ] SELECT * FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) <= 1656686881 AND status = '0' ) [ RunTime:0.000531s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:48:03+08:00] 103.142.140.69 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000574s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004087s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002809s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000876s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002628s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002255s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000412s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:48:09+08:00] 31.218.152.192 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000636s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004181s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002864s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000884s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002622s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002467s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000445s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:48:18+08:00] 117.147.30.227 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000487s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.003307s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000698s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002031s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001831s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001735s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000342s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:48:28+08:00] 154.39.81.45 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000428s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.002962s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002036s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000620s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001914s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001728s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000298s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:48:33+08:00] 117.147.30.227 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000438s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.002959s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002023s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001776s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001666s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000321s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:48:45+08:00] 138.68.149.125 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000433s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.002997s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.001872s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000603s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001723s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001588s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000296s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:48:48+08:00] 117.147.30.227 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000437s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.003084s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.001993s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000650s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001868s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001784s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000351s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:49:01+08:00] 38.54.36.20 GET hi.easycars.vip/index/index/item_crontab
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000406s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.002306s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_invest_list` [ RunTime:0.001514s ]
+[ sql ] [ SQL ] SELECT * FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) <= 1656686941 AND status = '0' ) [ RunTime:0.000515s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:49:03+08:00] 117.147.30.227 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000693s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004179s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000621s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002858s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000913s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002621s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002614s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000465s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:49:09+08:00] 31.218.152.192 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000591s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004153s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000590s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002925s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000853s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002580s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002492s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000442s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:49:18+08:00] 117.147.30.227 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000726s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004185s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002672s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002185s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002440s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000483s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:49:29+08:00] 154.39.81.45 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000673s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004716s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000671s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.003287s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.001003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.003059s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002917s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000518s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:49:33+08:00] 117.147.30.227 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000642s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004261s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000747s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002888s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000853s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002617s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002628s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000462s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:49:45+08:00] 138.68.149.125 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000710s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004465s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002962s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000950s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002715s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002669s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000467s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:49:48+08:00] 117.147.30.227 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000474s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.002987s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.001977s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000705s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001838s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001716s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000338s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:50:02+08:00] 38.54.36.20 GET hi.easycars.vip/index/index/item_crontab
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004880s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004253s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_invest_list` [ RunTime:0.002932s ]
+[ sql ] [ SQL ] SELECT * FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) <= 1656687002 AND status = '0' ) [ RunTime:0.000996s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:50:03+08:00] 117.147.30.227 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000464s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.003054s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.001901s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000630s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001798s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001690s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000337s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:50:09+08:00] 31.218.152.192 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000498s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.003085s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002173s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000667s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002005s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001929s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000364s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:50:18+08:00] 117.147.30.227 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000487s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.003023s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.001976s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001826s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001736s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000355s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:50:33+08:00] 117.147.30.227 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000479s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.002645s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.003528s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000955s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002738s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002598s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000505s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:50:45+08:00] 154.39.81.45 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000416s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.002923s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002096s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001976s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001816s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000333s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:50:45+08:00] 138.68.149.125 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000570s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004144s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002863s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000879s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002630s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002455s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000463s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:50:48+08:00] 117.147.30.227 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000575s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004110s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002790s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000902s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002504s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002518s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000488s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:51:01+08:00] 38.54.36.20 GET hi.easycars.vip/index/index/item_crontab
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000589s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004479s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000677s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_invest_list` [ RunTime:0.003154s ]
+[ sql ] [ SQL ] SELECT * FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) <= 1656687061 AND status = '0' ) [ RunTime:0.001096s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:51:03+08:00] 117.147.30.227 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000449s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.003031s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.001951s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001755s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001712s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000320s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:51:10+08:00] 31.218.152.192 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000614s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004125s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002788s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000885s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002579s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002470s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000413s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:51:18+08:00] 117.147.30.227 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000409s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.003016s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.001871s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001733s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001589s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000299s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:51:30+08:00] 154.39.81.45 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000637s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004177s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002809s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000922s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002672s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002515s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000456s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:51:33+08:00] 117.147.30.227 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000417s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.002987s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.001848s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000585s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001861s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001681s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000296s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:51:45+08:00] 138.68.149.125 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000714s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004278s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002910s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000922s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002649s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002351s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000418s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:51:48+08:00] 103.142.140.69 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000763s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004277s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001015s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.003191s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000937s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002706s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002300s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000433s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:52:02+08:00] 38.54.36.20 GET hi.easycars.vip/index/index/item_crontab
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000587s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004600s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_invest_list` [ RunTime:0.003233s ]
+[ sql ] [ SQL ] SELECT * FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) <= 1656687122 AND status = '0' ) [ RunTime:0.001071s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:52:03+08:00] 103.142.140.69 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000445s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.003143s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002101s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000893s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001903s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001852s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000334s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:52:09+08:00] 31.218.152.192 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000452s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.003093s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002246s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001775s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001626s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000310s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:52:18+08:00] 103.142.140.69 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000497s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.003033s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002044s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001995s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001832s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000307s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:52:30+08:00] 154.39.81.45 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000428s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.002938s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.001980s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000640s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001875s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001796s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000345s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:52:33+08:00] 103.142.140.69 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000655s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.003634s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002967s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000932s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002351s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002140s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000420s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:52:45+08:00] 138.68.149.125 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000687s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004097s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000705s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002949s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000880s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002528s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002577s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000517s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:52:48+08:00] 103.142.140.69 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000717s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004294s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000640s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002968s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.001090s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002756s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002699s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000487s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:53:01+08:00] 38.54.36.20 GET hi.easycars.vip/index/index/item_crontab
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000708s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004299s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_invest_list` [ RunTime:0.002781s ]
+[ sql ] [ SQL ] SELECT * FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) <= 1656687181 AND status = '0' ) [ RunTime:0.000985s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:53:03+08:00] 103.142.140.69 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000485s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.002975s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.001992s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001879s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001790s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000336s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:53:09+08:00] 31.218.152.192 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000424s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.002502s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.001714s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000679s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001526s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001445s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000267s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:53:18+08:00] 103.142.140.69 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000489s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.003196s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002137s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001863s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001869s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000388s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:53:28+08:00] 154.39.81.45 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000478s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.003009s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002015s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001822s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001728s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000344s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:53:33+08:00] 103.142.140.69 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000662s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004193s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002942s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000911s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002681s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000676s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.003108s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000521s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:53:45+08:00] 138.68.149.125 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000474s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.003077s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.001933s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001807s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001738s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000329s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:53:48+08:00] 103.142.140.69 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000671s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004272s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000643s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002948s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000921s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002762s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002597s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000477s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:54:02+08:00] 38.54.36.20 GET hi.easycars.vip/index/index/item_crontab
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000865s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004372s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000754s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_invest_list` [ RunTime:0.002994s ]
+[ sql ] [ SQL ] SELECT * FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) <= 1656687242 AND status = '0' ) [ RunTime:0.001005s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:54:03+08:00] 103.142.140.69 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000700s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004153s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000630s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002987s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000886s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002664s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002558s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000514s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:54:09+08:00] 31.218.152.192 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000664s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004387s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002989s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000885s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002802s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002762s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000519s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:54:18+08:00] 103.142.140.69 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000484s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.003048s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002069s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001941s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001805s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000368s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:54:33+08:00] 103.142.140.69 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000732s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004168s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.003073s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000910s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002692s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002617s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000487s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:54:45+08:00] 154.39.81.45 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000954s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004542s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000725s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002834s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000968s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002837s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002648s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000425s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:54:45+08:00] 138.68.149.125 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000739s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004335s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000919s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.003730s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.001031s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.003173s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.003158s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000503s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:54:48+08:00] 103.142.140.69 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000767s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004160s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000820s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002580s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000941s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002181s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000650s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002037s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000318s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:55:01+08:00] 38.54.36.20 GET hi.easycars.vip/index/index/item_crontab
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000322s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.001694s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_invest_list` [ RunTime:0.001106s ]
+[ sql ] [ SQL ] SELECT * FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) <= 1656687301 AND status = '0' ) [ RunTime:0.000383s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:55:03+08:00] 103.142.140.69 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000600s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004807s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002963s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000955s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002829s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002701s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000573s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:55:09+08:00] 31.218.152.192 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000755s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004186s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002704s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000959s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002718s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002588s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000485s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:55:18+08:00] 103.142.140.69 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000485s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.003192s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002168s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000707s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001860s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001816s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000343s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:55:27+08:00] 154.39.81.45 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000485s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.003146s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002104s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001903s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001889s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000334s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:55:33+08:00] 103.142.140.69 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000825s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.005005s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000747s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.003410s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.001022s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.003168s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000687s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.003002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000538s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:55:45+08:00] 138.68.149.125 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000502s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.003102s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002107s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000667s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001974s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001744s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000332s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:55:48+08:00] 103.142.140.69 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000681s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004577s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002276s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001965s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001839s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000349s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:56:02+08:00] 38.54.36.20 GET hi.easycars.vip/index/index/item_crontab
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000567s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004066s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_invest_list` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) <= 1656687362 AND status = '0' ) [ RunTime:0.000979s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:56:03+08:00] 103.142.140.69 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000595s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004922s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.003011s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000807s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002557s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002971s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000551s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:56:10+08:00] 31.218.152.192 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000463s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.003162s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.001940s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000623s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001811s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001762s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000337s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:56:18+08:00] 103.142.140.69 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000640s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.003362s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002256s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000751s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002110s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001974s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000358s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:56:27+08:00] 154.39.81.45 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000457s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.002627s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.001740s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001651s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001558s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000296s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:56:33+08:00] 103.142.140.69 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000650s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004551s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000775s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.003290s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000947s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.003010s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000631s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.003050s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000539s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:56:45+08:00] 138.68.149.125 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000630s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004246s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000595s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002176s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001870s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001809s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000341s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:56:48+08:00] 103.142.140.69 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000864s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.005534s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000984s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.003199s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000927s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002828s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002684s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000435s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:57:01+08:00] 38.54.36.20 GET hi.easycars.vip/index/index/item_crontab
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000400s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.002406s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_invest_list` [ RunTime:0.001586s ]
+[ sql ] [ SQL ] SELECT * FROM `lc_invest_list` WHERE  ( UNIX_TIMESTAMP(time1) <= 1656687421 AND status = '0' ) [ RunTime:0.000529s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:57:03+08:00] 103.142.140.69 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000652s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.004311s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.002926s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000918s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.002714s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.002605s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000476s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:57:09+08:00] 31.218.152.192 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000464s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.002858s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.001917s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001795s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001667s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000302s ]
+---------------------------------------------------------------
+
+[2022-07-01T22:57:18+08:00] 103.142.140.69 POST hi.easycars.vip/admin/index/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000513s ] mysql:host=localhost;port=3309;dbname=8812qwe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_info` [ RunTime:0.002451s ]
+[ sql ] [ SQL ] SELECT `ban_ip` FROM `lc_info` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system_user` [ RunTime:0.001576s ]
+[ sql ] [ SQL ] SELECT * FROM `system_user` WHERE  `id` = 10000 LIMIT 1 [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_cash` [ RunTime:0.001470s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_cash` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lc_recharge` [ RunTime:0.001467s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `lc_recharge` WHERE  `status` = 0  AND `warn` = 0 [ RunTime:0.000305s ]
